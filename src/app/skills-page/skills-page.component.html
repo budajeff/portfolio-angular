@@ -1,0 +1,10 @@
+<section>
+    <h2>Skills</h2>
+    <section class="card-collection">
+        <card *ngFor="let skill of skillData"
+            [title]="skill.title"
+            [subTitle]="skill.subtitle"
+            [details]="skill.details">
+        ></card>
+    </section>
+</section>
