@@ -1,0 +1,14 @@
+<div class="card-flex">
+    <section className='card'>
+        <h3>{{title}}</h3>
+        <section class="image-section">
+            <img *ngIf="imageSrc" class="card-img" src={{imageSrc}} alt={{imageAlt}}><img>
+        </section>
+        <section class="text-section">
+            <div class="card-text">
+                <h4>{{subTitle}}</h4>
+                <p *ngFor="let detail of details">{{detail}}</p>
+            </div>
+        </section>
+    </section>
+</div>
