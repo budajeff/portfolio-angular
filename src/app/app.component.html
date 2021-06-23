@@ -1,8 +1,13 @@
-<nav>
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-  </ul>
-</nav>
-<!-- The routed views render in the <router-outlet>-->
-<router-outlet></router-outlet>
+<div>
+  <div class="nav-parent">
+    <ul class="nav-list">
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/experience" routerLinkActive="active">Experience</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+    </ul>
+  </div>
+</div>
+<section className="nav-content">
+  <!-- The routed views render in the <router-outlet>-->
+  <router-outlet></router-outlet>
+</section>
