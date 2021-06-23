@@ -20,8 +20,8 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.imageSrc = (this.imageService.getImages() as any)[this.imageKey].image;
-    this.imageAlt = (this.imageService.getImages() as any)[this.imageKey].alt;
+    this.imageSrc = (this.imageService.getImages() as any)[this.imageKey]?.image;
+    this.imageAlt = (this.imageService.getImages() as any)[this.imageKey]?.alt;
   }
 
 }
