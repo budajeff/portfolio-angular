@@ -8,7 +8,7 @@ import { ImageService } from '../image.service';
 })
 export class CardComponent implements OnInit {
 
-  @Input() title: string = 'title';
+  @Input() title?: string = 'title';
   @Input() subTitle?: string = 'subtitle';
   @Input() details?: string[] = ['detail 1', 'detail 2'];
   @Input() imageKey?: string = '';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CardComponent } from '../card/card.component';
 import { SiteDataService } from '../site-data.service';
+import { CardData } from '../card/card-data';
 
 @Component({
   selector: 'app-about-page',
@@ -9,12 +9,21 @@ import { SiteDataService } from '../site-data.service';
 })
 export class AboutPageComponent implements OnInit {
 
-  public aboutData: any;
+  public aboutData: CardData[] = [];
 
   constructor(private siteDataService: SiteDataService) { }
 
   ngOnInit(): void {
-    this.aboutData = this.siteDataService.getSiteData().about[0];
+    this.aboutData = this.siteDataService.getSiteData().about
+      .filter(x => x.keywords.includes('Angular'))
+      .map(x => {
+        return {
+          title: x.title,
+          subTitle: x.subtitle,
+          details: x.details,
+          imageKey: x.image
+        };
+      });
   }
 
 }

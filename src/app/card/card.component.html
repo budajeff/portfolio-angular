@@ -1,13 +1,16 @@
 <div class="card-flex">
     <section class='card'>
-        <h3>{{title}}</h3>
+        <h3 *ngIf="title">{{title}}</h3>
         <section class="image-section">
             <img *ngIf="imageSrc" class="card-img" src={{imageSrc}} alt={{imageAlt}}><img>
         </section>
         <section class="text-section">
             <div class="card-text">
                 <h4 *ngIf="subTitle">{{subTitle}}</h4>
-                <p *ngFor="let detail of details">{{detail}}</p>
+                <div *ngFor="let detail of details">
+                    <p *ngIf="detail[0] !== '<'">{{detail}}</p>
+                    <p *ngIf="detail[0] === '<'"[innerHTML]="detail"></p>
+                </div>
             </div>
         </section>
     </section>

@@ -196,15 +196,26 @@ export class SiteDataService {
       ],
       about: [
         {
-          name: 'About This Site',
-          title: null,
+          title: 'About This Site',
           subtitle: '(It\'s a coding sample).',
           details: [
             'This site demonstrates my knowledge of basic ReactJS and mobile-first CSS concepts.',
             'I chose not to use a component or layout library so that I could demonstrate the above technologies.',
             'It also demonstrates that I\'m not a UX designer, but I do enjoy working with those talented people :-).',
             '<div>The source code for this site is available at <a href="https://github.com/budajeff/portfolio-react" target="_blank" rel="noreferrer">GitHub</a>.</div>'],
-          image: 'reactVsCode'
+          image: 'reactVsCode',
+          keywords: ['ReactJS', 'CSS']
+        },
+        {
+          title: 'About This Site',
+          subtitle: '(It\'s a coding sample).',
+          details: [
+            'This site demonstrates my knowledge of basic Angular and mobile-first CSS concepts.',
+            'I chose not to use a component or layout library so that I could demonstrate the above technologies.',
+            'It also demonstrates that I\'m not a UX designer, but I do enjoy working with those talented people :-).',
+            '<div>The source code for this site is available at <a href="https://github.com/budajeff/portfolio-angular" target="_blank" rel="noreferrer">GitHub</a>.</div>'],
+          image: 'angularVsCode',
+          keywords: ['Angular', 'CSS']
         }
       ]
     };
