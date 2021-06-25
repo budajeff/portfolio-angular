@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SiteDataService } from '../site-data.service';
-
+import { CardData } from '../card/card-data';
 @Component({
   selector: 'app-experience-page',
   templateUrl: './experience-page.component.html',
@@ -10,17 +10,16 @@ export class ExperiencePageComponent implements OnInit {
 
   constructor(private siteDataService: SiteDataService) { }
 
-  public experiences: any;
+  public experiences: CardData[] = [];
 
   ngOnInit(): void {
     this.experiences = this.siteDataService.getSiteData().experience.map(job => {
       const dateDetail = this.dateRange(job);
       return {
-        key: job.title + job.team,
         title: job.title,
-        subtitle: job.team,
+        subTitle: job.team,
         details: [dateDetail, ...job.details],
-        imageKey: job.image
+        imageKey: job.image ?? 'none'
       };
     });
   }

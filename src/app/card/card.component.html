@@ -6,7 +6,7 @@
         </section>
         <section class="text-section">
             <div class="card-text">
-                <h4>{{subTitle}}</h4>
+                <h4 *ngIf="subTitle">{{subTitle}}</h4>
                 <p *ngFor="let detail of details">{{detail}}</p>
             </div>
         </section>

@@ -167,7 +167,7 @@ export class SiteDataService {
         },
         {
           title: 'Programmer',
-          team: null,
+          team: undefined,
           employer: 'SofTech',
           location: 'Bloomfield Hills, Michigan',
           startDate: '2000-08-01',
@@ -180,7 +180,7 @@ export class SiteDataService {
         },
         {
           title: 'Aspiring Programmer',
-          team: null,
+          team: undefined,
           employer: null,
           location: 'Lansing, Michigan',
           startDate: '1990-01-01',
