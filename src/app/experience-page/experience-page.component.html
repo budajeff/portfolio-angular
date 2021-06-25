@@ -1,11 +1,11 @@
 <section>
     <h2>Over 20 Years of Software Development Experience</h2>
-    <div class="card-collection">
+    <cards>
         <card *ngFor="let job of experiences"
             [title]="job.title"
             [subTitle]="job.subtitle"
             [details]="job.details"
             [imageKey]="job.imageKey">
         ></card>
-    </div> 
+    </cards> 
 </section>
