@@ -1,0 +1,23 @@
+<div class="contact-form-container">
+    <form #contactForm id="contact-form" (ngSubmit)="onSubmit()" action="https://formspree.io/f/mdoyzyjl" method="POST">
+
+        <div class="input-labels">
+            <label for="name">Name</label>
+            <label for="emailAddress">Email Address</label>
+            <label for="comments">Comments</label>
+        </div>
+
+        <div class="input-fields">
+            <input id="name" name="name" required [(ngModel)]="contactData.name">
+
+            <input id="emailAddress" name="emailAddress" type="email" required [(ngModel)]="contactData.emailAddress">
+
+            <textarea id="comments" name="comments" required [(ngModel)]="contactData.comments"></textarea>
+
+            <button id="submit-button" type="submit" >Submit</button>
+        </div>
+    </form>
+
+    <div *ngIf="submitOk===true">Thanks for your interest!</div>
+    <div *ngIf="submitOk===false">Oops something went wrong! Try emailing me directly.</div>
+</div>
