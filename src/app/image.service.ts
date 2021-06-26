@@ -63,11 +63,15 @@ export class ImageService {
       },
       softech: {
         alt: 'Softech company logo',
-        image: './assets/images/softech.jpb'
+        image: './assets/images/softech.jpg'
       },
       reactVsCode: {
         alt: 'React in VS Code',
         image: './assets/images/react-vs-code.png'
+      },
+      angularVsCode: {
+        alt: 'Angular in VS Code',
+        image: './assets/images/angular-vs-code.png'
       }
     }
   }
