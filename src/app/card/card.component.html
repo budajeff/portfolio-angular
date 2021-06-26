@@ -13,5 +13,9 @@
                 </div>
             </div>
         </section>
+        <section *ngIf="customContent">
+            <ng-container *ngTemplateOutlet="customContent">
+            </ng-container>
+        </section>
     </section>
 </div>

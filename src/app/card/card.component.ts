@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, TemplateRef } from '@angular/core';
 import { ImageService } from '../image.service';
 
 @Component({
@@ -12,6 +12,7 @@ export class CardComponent implements OnInit {
   @Input() subTitle?: string = 'subtitle';
   @Input() details?: string[] = ['detail 1', 'detail 2'];
   @Input() imageKey?: string = '';
+  @Input() customContent?: TemplateRef<any> = undefined;
 
   public imageSrc?:string = undefined;
   public imageAlt?:string = undefined;
