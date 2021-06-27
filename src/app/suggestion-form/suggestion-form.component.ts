@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { of } from 'rxjs';
+import { SuggestionData } from '../suggestion-data';
+import { SuggestionServiceService } from '../suggestion-service.service';
 
 @Component({
   selector: 'suggestion-form',
@@ -7,15 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuggestionFormComponent implements OnInit {
 
-  public suggestionData: {name:string, emailAddress:string, comment:string}= {
+  public suggestionData: SuggestionData = {
     comment: '',
     name: '',
     emailAddress: ''
   }
 
-  constructor() { }
+  constructor(private suggestionService:SuggestionServiceService) { }
 
   ngOnInit(): void {
   }
 
+  onSubmit() {
+    this.suggestionService
+      .postSuggestion(this.suggestionData)
+      .subscribe(x => console.log(x));
+  }
 }

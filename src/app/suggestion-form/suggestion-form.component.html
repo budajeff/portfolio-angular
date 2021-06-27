@@ -1,4 +1,4 @@
-<form class="suggestion-form container" #suggestionForm="ngForm">
+<form class="suggestion-form container" #suggestionForm="ngForm" (ngSubmit)="onSubmit()">
         <label class="label name-row" for="name">Name</label>
         
         <div class="input name-row">
@@ -26,6 +26,6 @@
             class="error-text">Email address is required.</p>    
         </div>
 
-        <button class="input submit-row" type="submit">Submit</button>
+        <button class="input submit-row" type="submit" [disabled]="!suggestionForm.form.valid">Submit</button>
 </form>
 <p>{{suggestionData | json}}</p>
