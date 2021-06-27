@@ -11,6 +11,7 @@
 }
 .input {
     grid-column-start: input-col;
+    justify-self: self-start;
 }
 .error {
     grid-column-start: error-col;
@@ -33,4 +34,7 @@
 .error-text{
     margin:0 auto;
     color: red;
+}
+#suggestion-submit {
+    max-width: 200px;
 }

@@ -94,7 +94,15 @@ export class SiteDataService {
             'Finally, you can use the Contact form below but it is primarily intended to be a coding demonstration of handling form data.'],
             image: 'none'
           },
-      ],
+          {
+            title: 'Suggestions welcome!',
+            subtitle: undefined, 
+            details: [
+              'This site is primarily a coding sample and a place for me to practice technique. That being said, feel free to suggest improvements using the form below.'
+            ],
+            image: 'none'
+          }
+        ],
       experience: [
         {
           title: 'Senior Full Stack Web Developer',

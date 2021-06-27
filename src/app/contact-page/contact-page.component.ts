@@ -10,11 +10,13 @@ import { SiteDataService } from '../site-data.service';
 export class ContactPageComponent implements OnInit {
 
   public contactInfo?:CardData;
+  public suggestionInfo?:CardData;
 
   constructor(private siteDataService: SiteDataService) { }
 
   ngOnInit(): void {
     this.contactInfo = {...this.siteDataService.getSiteData().contact[0], imageKey: 'none'};
+    this.suggestionInfo = {...this.siteDataService.getSiteData().contact[1], imageKey: 'none' };
   }
 
 }
