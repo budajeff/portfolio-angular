@@ -1,0 +1,30 @@
+<form class="suggestion-form container" #suggestionForm="ngForm" (ngSubmit)="onSubmit()">
+        <label class="label name-row" for="name">Name</label>
+        
+        <div class="input name-row">
+            <input required #name="ngModel" name="name" [(ngModel)]="suggestionData.name">        
+            <p [hidden]="name.valid || name.pristine" class="error-text">Name is required.</p>    
+        </div>
+
+        <label class="label emailAddress-row" for="emailAddress">Email Address</label>
+        <div class="input emailAddress-row">
+            <input 
+                required 
+                #emailAddress="ngModel" 
+                name="emailAddress" 
+                [(ngModel)]="suggestionData.emailAddress">        
+            
+                <p [hidden]="emailAddress.valid || emailAddress.pristine" 
+                    class="error-text">Email address is required.</p>    
+
+        </div>
+
+        <label class="label comment-row" for="comment">Comment</label>
+        <div class="input comment-row">
+            <textarea #comment=ngModel required  name="comment" [(ngModel)]="suggestionData.comment"></textarea>            
+            <p [hidden]="comment.valid || comment.pristine" 
+            class="error-text">Email address is required.</p>    
+        </div>
+
+        <button id="suggestion-submit" class="input submit-row" type="submit" [disabled]="!suggestionForm.form.valid">Submit</button>
+</form>

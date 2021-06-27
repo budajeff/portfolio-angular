@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +12,10 @@ import { CardComponent } from './card/card.component';
 import { CardsComponent } from './cards/cards.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { SuggestionFormComponent } from './suggestion-form/suggestion-form.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +25,18 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
     CardComponent,
     CardsComponent,
     ExperiencePageComponent,
-    SkillsPageComponent
+    SkillsPageComponent,
+    NavBarComponent,
+    ContactPageComponent,
+    ContactFormComponent,
+    SuggestionFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

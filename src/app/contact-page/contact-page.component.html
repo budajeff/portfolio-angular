@@ -1,0 +1,24 @@
+<div class='card-collection'>
+    <card 
+        [title]="contactInfo!.title" 
+        [subTitle]="contactInfo?.subTitle"
+        [details]="contactInfo?.details"
+        [customContent]="contactForm">
+    </card> 
+
+    <ng-template #contactForm>
+        <contact-form></contact-form>
+    </ng-template>
+
+    <card
+        [title]="suggestionInfo!.title"
+        [subTitle]="suggestionInfo?.subTitle"
+        [details]="suggestionInfo!.details"
+        [customContent]="suggestionForm">
+
+    </card>
+
+    <ng-template #suggestionForm>
+        <suggestion-form></suggestion-form>
+    </ng-template>
+</div>

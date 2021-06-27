@@ -1,0 +1,40 @@
+.suggestion-form {
+    display: grid;
+    width: 100%;
+}
+.container {
+    grid-template-columns: [label-col] auto [input-col] auto [error-col] auto;
+    grid-template-rows: [name-row] auto [emailAddress-row] auto [comment-row] auto [submit-row] auto;
+}
+.label {
+    grid-column-start: label-col;
+}
+.input {
+    grid-column-start: input-col;
+    justify-self: self-start;
+}
+.error {
+    grid-column-start: error-col;
+}
+.name-row {
+    grid-row-start: name-row;
+    margin-bottom: 20px;
+}
+.emailAddress-row {
+    grid-row-start: emailAddress-row;
+    margin-bottom: 20px;
+}
+.comment-row{
+    grid-row-start: comment-row;
+    margin-bottom: 20px;
+}
+.submit-row{
+    grid-row-start: submit-row;
+}
+.error-text{
+    margin:0 auto;
+    color: red;
+}
+#suggestion-submit {
+    max-width: 200px;
+}

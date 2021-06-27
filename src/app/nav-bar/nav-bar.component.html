@@ -1,0 +1,9 @@
+<nav class="nav-parent">
+    <ul class="nav-list">
+      <li><a [class.nav-menu-item-selected]="isActive('Home')" class="nav-menu-item" routerLink="/home" routerLinkActive="active" (click)="menuItemClicked($event)">Home</a></li>
+      <li><a [class.nav-menu-item-selected]="isActive('Skills')"class="nav-menu-item" routerLink="/skills" routerLinkActive="active" (click)="menuItemClicked($event)">Skills</a></li>
+      <li><a [class.nav-menu-item-selected]="isActive('Experience')"class="nav-menu-item" routerLink="/experience" routerLinkActive="active" (click)="menuItemClicked($event)">Experience</a></li>
+      <li><a [class.nav-menu-item-selected]="isActive('Contact')"class="nav-menu-item" routerLink="/contact" routerLinkActive="active" (click)="menuItemClicked($event)">Contact</a></li>
+      <li><a [class.nav-menu-item-selected]="isActive('About')"class="nav-menu-item" routerLink="/about" routerLinkActive="active" (click)="menuItemClicked($event)">About</a></li>
+    </ul>
+  </nav>

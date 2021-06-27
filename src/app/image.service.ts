@@ -11,7 +11,7 @@ export class ImageService {
     return {
       onvioPracticeDetailBilling: {
         alt: 'Onvio Practice Detail Billing screen',
-        image: './assets/images/onvio-documents-detail-billing.png'
+        image: './assets/images/onvio-practice-detail-billing.png'
       },
       onvioPracticeBilling: {
         alt: 'Onvio Practice Billing screen',

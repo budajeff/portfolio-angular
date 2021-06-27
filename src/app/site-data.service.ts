@@ -85,6 +85,24 @@ export class SiteDataService {
         gitHub: 'https://github.com/budajeff',
         linkedInUri: 'https://www.linkedin.com/in/jeff-buda-78901498/',
       },
+      contact: [
+        {
+          title: 'Feel free to contact me in via the following.',
+          details: [
+            '<div>My preferred contact method is via <a href="mailto:budajeff@gmail.com" target="_blank" rel="noreferrer">email</a>.</div>',
+            '<div><a href="https://www.linkedin.com/in/jeff-buda-78901498/" target="_blank" rel="noreferrer">LinkedIn</a> is another good method.</div>',
+            'Finally, you can use the Contact form below but it is primarily intended to be a coding demonstration of handling form data.'],
+            image: 'none'
+          },
+          {
+            title: 'Suggestions welcome!',
+            subtitle: undefined, 
+            details: [
+              'This site is primarily a coding sample and a place for me to practice technique. That being said, feel free to suggest improvements using the form below.'
+            ],
+            image: 'none'
+          }
+        ],
       experience: [
         {
           title: 'Senior Full Stack Web Developer',
