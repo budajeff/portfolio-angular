@@ -31,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 See: https://angular.io/guide/deployment#deploy-to-github-pages
 
 <code>ng build --output-path docs --base-href /portfolio-angular/</code>
+
+## Hosting
+
+Site is available at https://budajeff.github.io/portfolio-angular/
