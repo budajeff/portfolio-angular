@@ -14,6 +14,7 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { SuggestionFormComponent } from './suggestion-form/suggestion-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     SkillsPageComponent,
     NavBarComponent,
     ContactPageComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    SuggestionFormComponent
   ],
   imports: [
     BrowserModule,

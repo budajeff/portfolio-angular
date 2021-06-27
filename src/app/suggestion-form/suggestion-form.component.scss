@@ -1,0 +1,26 @@
+.suggestion-form {
+    display: grid;
+    width: 100%;
+}
+.container {
+    grid-template-columns: [label-col] auto [input-col] auto [error-col] auto;
+    grid-template-rows: [name-row] auto [emailAddress-row] auto [comment-row] auto;
+}
+.label {
+    grid-column-start: label-col;
+}
+.input {
+    grid-column-start: input-col;
+}
+.error {
+    grid-column-start: error-col;
+}
+.name-row {
+    grid-row-start: name-row;
+}
+.emailAddress-row {
+    grid-row-start: emailAddress-row;
+}
+.comment-row{
+    grid-row-start: comment-row;
+}

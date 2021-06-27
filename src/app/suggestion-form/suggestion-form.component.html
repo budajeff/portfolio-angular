@@ -1,0 +1,10 @@
+<form class="suggestion-form container">
+        <label class="label name-row" for="name">Name</label>
+        <input class="input name-row" id="name" name="name" [(ngModel)]="suggestionData.name">        
+
+        <label class="label emailAddress-row" for="emailAddress">Email Address</label>
+        <input class="input emailAddress-row" id="emailAddress" name="emailAddress" [(ngModel)]="suggestionData.emailAddress">        
+
+        <label class="label comment-row" for="comment">Comment</label>
+        <textarea class="input comment-row" id="comment" name="comment" [(ngModel)]="suggestionData.comment"></textarea>        
+</form>
